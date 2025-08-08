@@ -5,6 +5,8 @@ from worker import speech_to_text, text_to_speech, openai_process_message
 from flask_cors import CORS
 import os
 
+#VAI TOMAR NO CU - TEST
+
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
