@@ -27,7 +27,7 @@ def speech_to_text(audio_binary):
 
 def text_to_speech(text, voice=""):
     base_url = "https://sn-watson-tts.labs.skills.network"
-        api_url = base_url + '/text-to-speech/api/v1/synthesize?output=output_text.wav'
+    api_url = base_url + '/text-to-speech/api/v1/synthesize?output=output_text.wav'
     # Adding voice parameter in api_url if the user has selected a preferred voice
     if voice != "" and voice != "default":
         api_url += "&voice=" + voice
